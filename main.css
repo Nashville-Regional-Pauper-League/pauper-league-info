@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1ea;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background: #d65618;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 72px;
+    line-height: 1;
+}
+
+.hero h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.hero .dates {
+    text-align: right;
+}
+
+.hero .dates h3 {
+    font-family: Cinzel, serif;
+    font-size: 38px;
+}
+
+.hero .dates p {
+    font-size: 22px;
+}
+
+.discord {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    background: white;
+    color: #5865F2;
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 1rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2.section-title {
+    font-family: Oswald;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-download {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.section-download a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    font-family: Oswald, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-download a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section-download img {
+    width: 28px;
+    height: 28px;
+}
+
+.prizes {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+}
+
+.prizes h3 {
+    font-size: 42px;
+    color: #d65618;
+    margin-bottom: 20px;
+    font-family: Cinzel;
+}
+
+.prizes ul {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.store {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.store img {
+    width: 150px;
+    /* Maximum width */
+    height: 100px;
+    /* Same height for every logo */
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.store h3 {
+    font-family: Oswald;
+    font-size: 28px;
+}
+
+.store p {
+    font-size: 20px;
+}
+
+.qualify {
+    background: #fff3d6;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.qualify ul {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+footer {
+    background: #1d1d1d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+@media(max-width:700px) {
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero .dates {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+}
