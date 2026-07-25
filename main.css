@@ -5,16 +5,29 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Elephant;
     background: #f4f1ea;
     color: #222;
     line-height: 1.5;
 }
 
 header {
-    background: #d65618;
+    background: #da3f0f;
     color: white;
     padding: 1rem 1rem;
+}
+
+.logo {
+    width: 180px;
+    height: 72px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero {
@@ -28,13 +41,13 @@ header {
 }
 
 .hero h1 {
-    font-family: Oswald, sans-serif;
+    /* font-family: Oswald, sans-serif; */
     font-size: 72px;
     line-height: 1;
 }
 
 .hero h2 {
-    font-family: Oswald, sans-serif;
+    /* font-family: Oswald, sans-serif; */
     font-size: 34px;
     font-weight: 400;
 }
@@ -44,12 +57,8 @@ header {
 }
 
 .hero .dates h3 {
-    font-family: Cinzel, serif;
-    font-size: 38px;
-}
-
-.hero .dates p {
-    font-size: 22px;
+    font-family: Elephant;
+    font-size: 1.5rem;
 }
 
 .discord {
@@ -74,8 +83,8 @@ section {
 }
 
 h2.section-title {
-    font-family: Oswald;
-    font-size: 42px;
+    /* font-family: Oswald; */
+    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -97,7 +106,7 @@ h2.section-title {
     background: #fff;
     color: #333;
     text-decoration: none;
-    font-family: Oswald, sans-serif;
+    /* font-family: Oswald, sans-serif; */
     font-size: 24px;
     font-weight: 500;
 
@@ -115,62 +124,116 @@ h2.section-title {
     height: 28px;
 }
 
+.prizes-section {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.participation {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.participation img {
+    width: 100%;
+    max-width: 10rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.participation h4 {
+    color: #d65618;
+    font-family: Elephant;
+    font-size: 2rem;
+    /* margin-bottom: 10px; */
+}
+
+.participation p {
+    font-size: 18px;
+    margin: 0;
+}
+
 .prizes {
     background: white;
     border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    padding: 1rem;
+    max-width: 75%;
+    /* box-shadow: 0 5px 20px rgba(0, 0, 0, .1); */
 }
 
+@media (max-width: 768px) {
+    .prizes {
+        max-width: 100%;
+    }
+
+    .prizes-section {
+        flex-direction: column;
+    }
+
+    .participation {
+        order: 2;
+    }
+}
+
+
+
 .prizes h3 {
-    font-size: 42px;
+    font-size: 2rem;
     color: #d65618;
-    margin-bottom: 20px;
-    font-family: Cinzel;
+    /* margin-bottom: 20px; */
+    font-family: Elephant;
 }
 
 .prizes ul {
     margin-left: 25px;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .store-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    gap: .75rem;
 }
 
 .store {
     background: white;
     border-radius: 12px;
-    padding: 25px;
+    padding: 1rem;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
 }
 
 .store img {
-    width: 150px;
-    /* Maximum width */
-    height: 100px;
-    /* Same height for every logo */
+    width: 10rem;
+    height: 7rem;
     object-fit: contain;
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
 }
 
 .store h3 {
-    font-family: Oswald;
-    font-size: 28px;
+    /* font-family: Oswald; */
+    font-size: 1.5rem;
 }
 
 .store p {
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .qualify {
-    background: #fff3d6;
+    background: #47613E;
+    color: white;
     border-radius: 12px;
-    padding: 40px;
+    padding: 1rem;
 }
 
 .qualify ul {
